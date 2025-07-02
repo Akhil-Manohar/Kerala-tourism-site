@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top Tourist Attractions in Kerala</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #e8f5e9);
+      color: #333;
+    }
+
+    header {
+      background-color: #004d40;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      flex-wrap: wrap;
+    }
+
+    .logo-btn {
+      background: white;
+      color: #004d40;
+      border: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-bottom: 10px;
+    }
+
+    .logo-btn:hover {
+      background: #e0f2f1;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      flex: 1;
+      margin: 0 10px;
+    }
+
+    .menu {
+      position: relative;
+    }
+
+    .menu-btn {
+      background: white;
+      color: #004d40;
+      border: none;
+      padding: 10px 15px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .menu-btn:hover {
+      background-color: #e0f2f1;
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 45px;
+      right: 0;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    .dropdown a {
+      color: #004d40;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background-color: #e0f2f1;
+    }
+
+    .menu:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h2, h3 {
+      color: #2c3e50;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style: square inside;
+    }
+
+    a {
+      color: #00796b;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      margin: 30px 0;
+      border: none;
+      height: 1px;
+      background: #ccc;
+    }
+
+    .place-section {
+      margin-bottom: 40px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #004d40;
+      color: white;
+      padding: 15px;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .title {
+        margin: 10px 0;
+        font-size: 20px;
+      }
+
+      .dropdown {
+        position: static;
+        box-shadow: none;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        background: none;
+      }
+
+      .menu:hover .dropdown {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .dropdown a {
+        background: white;
+        border-top: 1px solid #ddd;
+      }
+
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <button class="logo-btn" onclick="location.href='#top'">🏝️ KeralaTour</button>
+    <h1 class="title">Top Tourist Attractions in Kerala</h1>
+    <div class="menu">
+      <button class="menu-btn">Menu ⏷</button>
+      <div class="dropdown">
+        <a href="#padmanabhaswamy">Sree Padmanabhaswamy</a>
+        <a href="#varkala">Varkala Beach</a>
+        <a href="#alleppey">Alleppey Backwaters</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h2>Top 3 Places to Visit in Kerala</h2>
+
+    <div class="place-section" id="padmanabhaswamy">
+      <h3>1. Sree Padmanabhaswamy Temple</h3>
+      <ul>
+        <li>Architectural Buildings</li>
+        <li>Religious Site</li>
+      </ul>
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/fe/2b/f3/sree-padmanabhaswamy.jpg?w=1000&h=-1&s=1" alt="Sree Padmanabhaswamy Temple">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.175733609747!2d76.94025057477391!3d8.4822874415588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bb09b7e81d35%3A0x1d2fedb7213a1ef7!2sSree%20Padmanabhaswamy%20Temple!5e0!3m2!1sen!2sin!4v1729198096552!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+      <p>The Padmanabhaswamy Temple is a Hindu temple dedicated to Vishnu in Thiruvananthapuram, Kerala. Known for its rich history, it's built in Kerala-Dravidian style and is considered the richest Hindu temple. <a href="https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple" target="_blank">See more</a></p>
+    </div>
+
+    <hr>
+
+    <div class="place-section" id="varkala">
+      <h3>2. Varkala Beach</h3>
+      <ul>
+        <li>Beaches</li>
+      </ul>
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/c8/f1/cb/varkala-beach.jpg?w=1000&h=-1&s=1" alt="Varkala Beach">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.5438207182856!2d76.70082452477695!3d8.734792291315266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05ef1c356e35d9%3A0x529a20f7e0453699!2sVarkala%20Beach!5e0!3m2!1sen!2sin!4v1729197153981!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+      <p>Varkala is a quiet hamlet with a serene beach, a 2000-year-old temple, and the peaceful Sivagiri Ashram nearby. <a href="https://www.keralatourism.org/destination/varkala-beach/328" target="_blank">See more</a></p>
+    </div>
+
+    <hr>
+
+    <div class="place-section" id="alleppey">
+      <h3>3. Alleppey Backwaters</h3>
+      <ul>
+        <li>Bodies of Water</li>
+      </ul>
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/f3/1b/4a/alleppey-backwater-cruise.jpg?w=1000&h=-1&s=1" alt="Alleppey Backwaters">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125901.44539732591!2d76.28036389576123!3d9.55900089655902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08840c19dfbd5b%3A0x75286fb43840540e!2sAlleppey%20Backwaters!5e0!3m2!1sen!2sin!4v1729198008436!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+      <p>The Alleppey backwaters are a network of lakes and canals stretching over 900 km, perfect for houseboat cruises through Kerala's lush green countryside. <a href="https://www.keralatourism.org/destination/alleppey-backwaters/328" target="_blank">See more</a></p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Kerala Tourism Showcase. All rights reserved.
+  </footer>
+
+</body>
+</html>
